@@ -1,0 +1,54 @@
+1.Explain One-Hot Encoding
+
+Categorical data describes variables made up of label values, such as the values "red," "blue," and "green" for the "colour" variable. Consider values as several categories that occasionally exhibit a natural ordering. 
+
+Depending on how they are implemented, some machine learning algorithms, such decision trees, can function directly with categorical data, but the majority need all input and output variables to have a numerical value. Any categorical data must therefore be converted to integers. 
+
+Data can be converted using one hot encoding as a means of getting a better prediction and preparing the data for an algorithm.
+
+With one-hot, we convert each categorical value into a new categorical column and assign a binary value of 1 or 0 to those columns. Each integer value is represented as a binary vector. All the values are zero, and the index is marked with a 1.
+
+2.Explain Bag of Words
+
+Every algorithm we use in NLP operates on numbers. Our text cannot be entered into the algorithm directly. As a result, the text is preprocessed using the Bag of Words model, which creates a bag of words from it and keeps track of how many times the most common words are used overall. 
+
+Using a table that shows the number of words that correspond to each word, this model may be seen.
+
+3.Explain Bag of N-Grams
+
+The number of times each n-gram appears in each document of a collection is tracked by a bag-of-n-grams model. A group of n succeeding words is known as an n-gram. 
+
+The text is not divided into words by bagOfNgrams.
+
+4.Explain TF-IDF
+
+TF-IDF, which stands for term frequency-inverse document frequency, is a metric that can be used to quantify the significance or relevance of string representations (words, phrases, lemmas, etc.) in a document among a group of documents. It is used in the fields of information retrieval (IR) and machine learning (also known as a corpus).
+
+5.What is OOV problem?
+
+The phrase "out-of-vocabulary" (OOV) refers to words that are not typically used in a natural language processing environment. 
+
+These terms are present in the audio signal for speech recognition. Word meaning is represented mathematically by word vectors. However, a drawback of word embeddings is that the words must have appeared in the training set previously. 
+
+A difficulty arises when a word from the training set does not appear in the real data. There are several ways to prevent a zero-probability occurrence, such as smoothing and word substitution.
+
+6.What are word embeddings?
+
+Word embeddings are a sort of word representation that allows for the depiction of words with comparable meanings. 
+
+They are a distributed representation for text that may be one of the major innovations behind deep learning techniques' excellent performance on difficult natural language processing challenges.
+
+7.Explain Continuous bag of words (CBOW)
+
+Based on the source context words, the CBOW model architecture attempts to forecast the current target word (the centre word) (surrounding words). A basic sentence like "The quick brown fox leaps over the lazy dog" can be broken down into pairs of (context window, target word) with examples like "The quick brown fox jumps over the sleepy dog" and "The swift brown fox is brown." In order to forecast the target word, the model uses the words in the context window.
+
+8.Explain SkipGram
+
+The algorithm SkipGram is used to generate high-dimensional vector representations of words known as word embeddings. Words with comparable semantic meanings will be clustered together in that vector's space thanks to the semantic meanings that these embeddings are intended to encode.
+
+9.Explain Glove Embeddings.
+
+The GloVe word embedding's fundamental tenet is to use statistics to infer the link between words. The co-occurrence matrix, in contrast to the occurrence matrix, informs you how frequently a specific word pair occurs together. The co-occurrence matrix's values each represent a pair of words that frequently appear together.
+
+*********
+
