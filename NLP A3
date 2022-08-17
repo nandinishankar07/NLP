@@ -1,0 +1,44 @@
+1. Explain the basic architecture of RNN cell.
+
+So if you consider a simple feedforward Neural network with one hidden layer. X is the input and Y is output at
+timestept then all we need to do is create a feedback connection from hidden layer to itself to access information
+at time step t-1. Feedback loop implies that there's a delay of one time unit. So one of input units into h, is
+ht-1 ,in turns hidden layer takes in both h, and its own last value. So in nutshell this feedback loop allows
+information to be passed from one step of the network to the next and hence acts as memory in network.
+
+2. Explain Backpropagation through time (BPTT)
+
+Backpropagation Through Time, or BPTT, is the application of the Backpropagation training algorithm to recurrent neural network applied to sequence data like a time series. A recurrent neural network is shown one input each timestep and predicts one output. Conceptually, BPTT works by unrolling all input timesteps.
+
+3. Explain Vanishing and exploding gradients
+
+The exploding gradient is the inverse of the vanishing gradient and occurs when large error gradients accumulate, resulting in extremely large updates to neural network model weights during training. As a result, the model is unstable and incapable of learning from your training data.
+
+4. Explain Long short-term memory (LSTM)
+
+Long short-term memory (LSTM) is an artificial neural network used in the fields of artificial intelligence and deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections.
+
+5. Explain Gated recurrent unit (GRU)
+
+A gated recurrent unit (GRU) is part of a specific model of recurrent neural network that intends to use connections through a sequence of nodes to perform machine learning tasks associated with memory and clustering, for instance, in speech recognition.
+
+6. Explain Peephole LSTM
+
+LSTM is special kind of RNN which can remember long term dependencies. LSTM are specially designed to avoid the problems which are faced in RNN. You can learn about RNN in my previous article Understanding RNN. The architectural behavior made it strong t remember long term dependencies. 
+
+7. Bidirectional RNNs
+
+A Bidirectional RNN is a combination of two RNNs training the network in opposite directions, one from the beginning to the end of a sequence, and the other, from the end to the beginning of a sequence.
+
+8. Explain the gates of LSTM with equations.
+
+LSTM networks were designed specifically to overcome the long-term dependency problem faced by recurrent neural networks RNNs (due to the vanishing gradient problem). LSTMs have feedback connections which make them different to more traditional feedforward neural networks. This property enables LSTMs to process entire sequences of data (e.g. time series) without treating each point in the sequence independently, but rather, retaining useful information about previous data in the sequence to help with the processing of new data points. As a result, LSTMs are particularly good at processing sequences of data such as text, speech and general time-series.
+
+9. Explain BiLSTM
+
+A Bidirectional LSTM, or biLSTM, is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm (e.g. knowing what words immediately follow and precede a word in a sentence).
+
+10. Explain BiGRU
+A Bidirectional GRU, or BiGRU, is a sequence processing model that consists of two GRUs. one taking the input in a forward direction, and the other in a backwards direction. It is a bidirectional recurrent neural network with only the input and forget gates.
+
+************
