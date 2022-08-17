@@ -1,0 +1,57 @@
+1.What are Corpora?
+
+An assortment of texts is called a corpus. When we use it for language research, we refer to it as a corpus (plural: corpora). 
+
+That makes the essays in your class a corpus, albeit a small one. Additionally, it turns the internet into a sizable corpus. 
+
+The pioneers of corpus linguistics are the authors of dictionaries. The biggest fault while compiling a dictionary is to omit things: words, phrases, or idioms, as well as word meanings. Lexicographers, or those who create dictionaries, have long known that having a large corpus and a computer are the best ways to ensure that nothing is missed. The computer can then find all the words (ordered by frequency) so a lexicographer can check the list to make sure that words are not missed.
+ 
+2.What are Tokens?
+
+Generally speaking, a token is an item that stands in for another thing, such as another item (either real or virtual) or an abstract idea. For instance, a gift may sometimes be described as a symbol expressing the giver's regard for the receiver. Tokens come in a variety of forms in computers.
+
+3.What are Unigrams, Bigrams, Trigrams?
+
+The n-gram is the simplest model for estimating probabilities for sentences and word sequences. An n-gram is a group of n words; a 2-gram is a group of two words, such as "please turn your", "turn your homework," or "your homework," and a 3-gram is a group of three words, such as "please turn your," "turn your homework," or "your homework."
+
+4.How to generate n-grams from text?
+
+To generate 1-grams we pass the value of n=1 in ngrams function of NLTK. But first, we split the sentence into tokens and then pass these tokens to ngrams function.
+
+As we can see we have got one word in each tuple for the Unigram model.
+
+from nltk.util import ngrams
+
+n = 1
+sentence = 'You will face many defeats in life, but never let yourself be defeated.'
+unigrams = ngrams(sentence.split(), n)
+
+for item in unigrams:
+    print(item)
+    
+5.Explain Lemmatization
+
+The process of lemmatization in natural language processing involves working with words according to their root lexical components. It is used in natural language processing and natural language understanding in computer programming and artificial intelligence.
+
+6.Explain Stemming
+
+Stemming is the process of reducing a word to its word stem that affixes to suffixes and prefixes or to the roots of words known as a lemma.
+
+7.Explain Part-of-speech (POS) tagging
+
+It is a process of converting a sentence to forms – list of words, list of tuples (where each tuple is having a form (word, tag)). The tag in case of is a part-of-speech tag, and signifies whether the word is a noun, adjective, verb, and so on.
+
+8.Explain Chunking or shallow parsing
+
+Shallow parsing is an analysis of a sentence which first identifies constituent parts of sentences and then links them to higher order units that have discrete grammatical meanings.
+
+9.Explain Noun Phrase (NP) chunking
+
+Chunking is defined as the process of natural language processing used to identify parts of speech and short phrases present in a given sentence.
+
+10.Explain Named Entity Recognition
+
+A natural language processing technique that can automatically scan entire articles and pull out some fundamental entities in a text and classify them into predefined categories.
+
+**********
+
