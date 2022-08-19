@@ -1,0 +1,47 @@
+1. What are Vanilla autoencoders
+
+A neural network with three layers and one hidden layer makes up the autoencoder. We learn how to reconstruct the input using techniques like the Adam optimizer and the mean squared error loss function when the input and output are the same.
+
+2. What are Sparse autoencoders
+
+An autoencoder that achieves an information bottleneck is known as a sparse autoencoder. In particular, the loss function is designed to punish activations inside a layer.
+
+3. What are Denoising autoencoders
+
+One particular kind of autoencoder, which is typically categorised as a kind of deep neural network, is a denoising autoencoder. The denoising autoencoder is trained to reconstruct a specific model from its inputs using a hidden layer.
+
+4. What are Convolutional autoencoders
+
+Convolutional Autoencoders, a subset of Convolutional Neural Networks, are used to learn convolution filters unsupervised. They are typically used in image reconstruction tasks to reduce reconstruction mistakes by discovering the best filters.
+
+5. What are Stacked autoencoders
+
+A multi-layer neural network with stacked autoencoders in each layer is known as a stacked autoencoder. The output of one layer feeds into the next layer. The unsupervised greedy layer-wise pre-training method only trains one layer at a time.
+
+6. Explain how to generate sentences using LSTM autoencoders
+
+7. Explain Extractive summarization
+
+In order to provide a succinct summary, extractive summarization seeks to determine the key information that will be extracted and grouped together. Natural language processing is used to generate an abstractive summary when abstractive summary generation has completely rewritten the material.
+
+8. Explain Abstractive summarization
+
+In order to provide a succinct summary, extractive summarization seeks to determine the key information that will be extracted and grouped together. Natural language processing is used to generate an abstractive summary when abstractive summary generation has completely rewritten the material.
+
+9. Explain Beam search
+
+The most often used search method for Deep NLP algorithms like Neural Machine Translation, Image Captioning, Chatbots, etc. is beam search. Beam search, as opposed to the less-than-ideal Greedy search, takes into account numerous optimum possibilities based on beamwidth utilising conditional probability.
+
+10. Explain Length normalization
+
+In order to normalise the influence of document length on the document ranking, document length normalisation modifies the word frequency or the relevance score.
+
+11. Explain Coverage normalization
+
+Relational theory's normalisation branch offers useful design information. It is the method of calculating the level of redundancy in a table. The objectives of normalisation include: 
+knowing how to describe the degree of redundancy in a relational schema 
+Provide tools for altering schemas to get rid of duplication.
+
+12. Explain ROUGE metric evaluation
+
+A collection of metrics and software programme called ROUGE, or Recall-Oriented Understudy for Gisting Evaluation, are used to assess automatic summarization and machine translation software in natural language processing.
