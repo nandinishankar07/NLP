@@ -1,0 +1,33 @@
+1. Explain the architecture of BERT
+
+BERT is just a transformer architecture with an encoder stack. An encoder-decoder network using self-attention on the encoder side and attention on the decoder side is known as a transformer architecture. The Encoder stack in BERTLARGE contains 24 layers compared to BERTBASE's 12 layers.
+
+2. Explain Masked Language Modeling (MLM)
+
+Masked Language Modeling is a fill-in-the-blank problem where a model tries to guess what the masked word should be by using the context words around a mask token. The model will produce the most likely replacement for each mask token present in an input when there are one or more of them.
+
+3. Explain Next Sentence Prediction (NSP)
+
+In the BERT training phase, the model learns to predict whether the second sentence in a pair will come after another in the original document by receiving pairs of sentences as input.
+
+4. What is Matthews evaluation?
+
+Brian Matthews created the Matthew's correlation coefficient, often known as MCC, in 1975. A statistical tool for evaluating models is MCC. Its function, which is equal to chi-square statistics for a 2 x 2 contingency table, is to assess or measure the difference between the expected values and actual values.
+
+5. What is Matthews Correlation Coefficient (MCC)?
+
+Brian Matthews created the Matthew's correlation coefficient in 1975; it is also known as MCC. MCC is a statistical tool for evaluating models. It performs the same function as chi-square statistics for a 2 x 2 contingency table, which is to assess the difference between the expected values and actual values.
+
+6. Explain Semantic Role Labeling
+
+Semantic role labelling, also known as shallow semantic parsing or slot-filling is the process of giving words or phrases in a sentence labels that reflect their semantic role in the sentence, such as that of an agent, objective, or outcome. It helps you determine the sentence's meaning.
+
+7. Why Fine-tuning a BERT model takes less time than pretraining
+
+8. Recognizing Textual Entailment (RTE)
+
+The Recognizing Textual Entailment (RTE) challenge is an annual exercise that supports global research in this field and offers a framework for evaluating textual entailment systems. Systems must determine whether one text implies another in this evaluation activity.
+
+9. Explain the decoder stack of GPT models.
+
+A sequence-to-sequence prediction task built on the transformer architecture makes up the GPT-2 model. However, it just includes the 12-layer decoder.
