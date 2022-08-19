@@ -1,0 +1,43 @@
+1. Can you think of a few applications for a sequence-to-sequence RNN? What about a
+sequence-to-vector RNN? And a vector-to-sequence RNN?
+
+In Sequence to Sequence Learning, RNN is trained to map an input sequence to an output sequence which is not necessarily of the same length. Applications are speech recognition, machine translation, image captioning and question answering.
+
+A variable-length context vector can be used instead of a ﬁxed-size vector. An Attention mechanism can be used to produces a sequence of vectors from the encoder RNN from each time step of the input sequence. The Decoder learns to pay selective attention to the vectors to produce the output at each time step.
+
+The RNN model takes a single vector as input and produces a sequence as output. An example of these models can be image to sentence model, which takes an image(consider it as a vector) and then produces a sentence to describe that image.
+
+2. Why do people use encoder–decoder RNNs rather than plain sequence-to-sequence RNNs
+for automatic translation?
+
+seq-2-seq RNNs translate one word at a time
+
+encoder-decoder RNNs read & translate a sentence at a time
+
+3. How could you combine a convolutional neural network with an RNN to classify videos?
+
+Each video is converted into sequential images and passed onto the CNN to extract spatial features. The outputs are then passed into a recurrent sequence learning model (i.e. LSTM) to identify temporal features within the image sequence.
+
+4. What are the advantages of building an RNN using dynamic_rnn() rather than static_rnn()?
+
+It is based on a while_loop() operation that is able to swap the GPU's memory to the CPU's memory during backpropagation, avoiding out-of-memory errors. 
+It is arguably easier to use, as it can directly take a single tensor as input and output (covering all time steps), rather than a list of tensors (one per time step). No need to stack, unstack, or transpose.
+It generates a smaller graph, easier to visualize in TensorBoard.
+
+5. How can you deal with variable-length input sequences? What about variable-length output
+sequences?
+
+The first and simplest way of handling variable length input is to set a special mask value in the dataset, and pad out the length of each input to the standard length with this mask value set for all additional entries created. Then, create a Masking layer in the model, placed ahead of all downstream layers.
+
+6. What is a common way to distribute training and execution of a deep RNN across multiple
+GPUs?
+
+tf.distribute.Strategy is a TensorFlow API to distribute training across multiple GPUs, multiple machines, or TPUs. Using this API, you can distribute your existing models and training code with minimal code changes.
+
+tf.distribute.Strategy has been designed with these key goals in mind:
+
+Easy to use and support multiple user segments, including researchers, machine learning engineers, etc.
+Provide good performance out of the box.
+Easy switching between strategies.
+You can distribute training using tf.distribute.Strategy with a high-level API like Keras Model.fit, as well as custom training loops (and, in general, any computation using TensorFlow).
+
