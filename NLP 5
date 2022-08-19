@@ -1,0 +1,41 @@
+1. What are Sequence-to-sequence models?
+
+A Seq2Seq model is a model that takes a sequence of items (words, letters, time series, etc) and outputs another sequence of items. In the case of Neural Machine Translation, the input is a series of words, and the output is the translated series of words.
+
+2. What are the Problem with Vanilla RNNs?
+
+RNNs suffer from the problem of vanishing gradients, which hampers learning of long data sequences. The gradients carry information used in the RNN parameter update and when the gradient becomes smaller and smaller, the parameter updates become insignificant which means no real learning is done.
+
+3. What is Gradient clipping?
+
+Gradient clipping is a technique that tackles exploding gradients. The idea of gradient clipping is very simple: If the gradient gets too large, we rescale it to keep it small.
+
+4. Explain Attention mechanism
+
+The idea behind the attention mechanism was to permit the decoder to utilize the most relevant parts of the input sequence in a flexible manner, by a weighted combination of all of the encoded input vectors, with the most relevant vectors being attributed the highest weights.
+
+5. Explain Conditional random fields (CRFs)
+
+Conditional random fields (CRFs) are a class of statistical modeling methods often applied in pattern recognition and machine learning and used for structured prediction. Whereas a classifier predicts a label for a single sample without considering "neighbouring" samples, a CRF can take context into account.
+
+6. Explain self-attention
+
+The attention mechanism allows output to focus attention on input while producing output while the self-attention model allows inputs to interact with each other (i.e calculate attention of all other inputs wrt one input.
+
+7. What is Bahdanau Attention?
+
+The Bahdanau attention was proposed to address the performance bottleneck of conventional encoder-decoder architectures, achieving significant improvements over the conventional approach.The performance bottleneck of traditional encoder-decoder systems was addressed with the Bahdanau focus, which produced notable improvements over the traditional method.
+
+8. What is a Language Model?
+
+A Language Model (LM) encapsulates the likelihood of a language's word order. In other words, it indicates the likelihood that a specific word will appear after a group of words. N-gram models and its variations have historically served as language models.
+
+9. What is Multi-Head Attention?
+
+A module for attention mechanisms called "Multi-head Attention" cycles repeatedly and simultaneously through an attention mechanism. The predicted dimension is then created by linearly combining the separate attention outputs.
+
+10. What is Bilingual Evaluation Understudy (BLEU)
+
+The measure BLEU (BiLingual Evaluation Understudy) is used to evaluate machine-translated text automatically. The resemblance of the machine-translated text to a collection of excellent reference translations is gauged by the BLEU score, which ranges from zero to one.
+
+
